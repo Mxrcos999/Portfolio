@@ -2,7 +2,7 @@ function typeWrite(elemento) {
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
     textoArray.forEach((letra, i) => {
-        setTimeout(() => elemento.innerHTML += letra, 75 * i)
+        setTimeout(() => elemento.innerHTML += letra, 140 * i)
     });
 }
 const titulo = document.querySelector('#hello');
@@ -186,7 +186,7 @@ menu.forEach(item => {
   const animationClass = 'animate';
   
   function animeScroll() {
-    const windowTop = window.pageYOffset + ((window.innerHeight *3)/4);
+    const windowTop = window.pageYOffset + ((window.innerHeight * 4)/4);
     target.forEach(function(element) {
       if((windowTop) > element.offsetTop) {
         element.classList.add(animationClass);

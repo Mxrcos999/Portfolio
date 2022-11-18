@@ -1,7 +1,5 @@
-body{
+body *{
     margin: 0px;
-    background-color: whitesmoke;
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,7 +10,7 @@ body{
     justify-content: space-around;
     height: 50px;
     width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
     align-items:center ;
   
 }
@@ -22,13 +20,13 @@ body{
 }
 .menu a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     
     
 }
 
 .menu a:hover{
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid rgb(0, 0, 0);
     
 }
 .menu li{
@@ -39,24 +37,40 @@ body{
 }
 .apresentacao{
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
     flex-wrap: wrap;
-    color: white;
+    align-items: center;
+    height: 90vh;
+    max-width: 1250px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
 }
-
+.apresentacao img{
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+}
+body{
+    margin: 0;
+    background-color: white;
+    color: black;
+}
 .txt-apresent{
     max-width: 337px;
     width: 100%;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-}
-.apresentacao img{
-    max-width: 400px;
-    width: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
 
 }
+.txt-apresent h3{
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
  .imagem img{
     max-width: 300px;
     width: 100%;
@@ -65,18 +79,21 @@ body{
 }
 .btn{
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 30em;
     padding: 4px;
     display: flex;
-    max-width: 270px;
+    max-width: 280px;
     width: 100%;
     text-align: center;
 }
 .btn:hover{
-    background-color: white;
-    color: rgb(3, 3, 3);
+    background-color: #0F62FE;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     transition: 0.6s;
 }
 /*fim da apresentação e header*/
@@ -86,21 +103,42 @@ body{
     flex-direction: row-reverse;
     margin-top: 100px;
     height: 90vh;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .text-sobre{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 350px;
-    
+    max-width: 350px;
+    width: 100%;
+    align-items: center;    
    
 }
 
+
+.text-sobre a{
+    width: 100%;
+    max-width: 205px;
+    background-color: #0F62FE;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 30em;
+    font-size: 20px;
+    text-decoration: none;
+   
+}
+.text-sobre a:hover{
+    background-color: #1155d3;
+    transition: 0.5s;
+
+}
 .sobre img{
     max-width: 410px;
     width: 100%;
@@ -126,22 +164,26 @@ body{
     max-width: 500px;
     width: 100%;
     margin: auto;
+    flex-wrap: wrap;
 
 }
 .menuProjetos button{
     border-style: none;
-    border-bottom: 1px solid whitesmoke;
-    color: black;
-    background-color: transparent;
-    
-    
-    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30em;
+    width: 100%;
+    font-size: 15px;
+    max-width: 170px;
+    height: 70px;
+    color: rgb(255, 254, 254);
+    background-color: #2571ff;
+    height: 32px;
+    cursor: pointer;    
+    margin-top: 30px;
 }
-#btnProjeto:hover{
-    color: white;
-    background-color: black;
+.menuProjetos button:hover{
+    background-color: #1155d3;
     transition: 0.5s;
-    border-radius: 10px;
 }
 .menuProjetos a:hover{
     border-bottom: 1px solid whitesmoke;
@@ -162,13 +204,15 @@ body{
     flex-direction: column;
     width: 100%;
     max-width: 270px;
-    height: 350px;
+    height: 360px;
     border: 1px solid black;
     border-radius: 30px;
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 30px;
+    padding-bottom: 10px;
     text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -229,17 +273,24 @@ body{
 /*------------contato*/
 .contato{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin-top: 30px;
     
    
 }
-.contato img{
-    max-width: 400px;
-    width: 100%;
+.itemContato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
 }
+.itemContato img{
+    max-width: 75px;
+    width: 100%;
+    height: 75px;
+}
+
 .tituloContato{
     text-align: center;
     margin-top: 100px;
@@ -276,14 +327,32 @@ form textarea{
 }
 /*-------------footer-------------*/
 footer{
+    background-image:url(/img/wave.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top:100px ;
+    align-items: center;
+    justify-content: center;
+    padding-top: 180px;
+    color: white;
+    font-size: 20px;
+    max-width: 4000px;
+    width: 100%;
+
+}
+footer p{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .icons a{
-    color: black;
+    color: rgb(255, 253, 253);
 }
+
 /*-----------------animação--------------------*/
 
 @keyframes back{
@@ -364,27 +433,27 @@ footer{
  
 }
 
-@media(max-width:855px){
-    .contato img{
-        display: none;
-    }
-    
-}
-
 }
 
 /*------------teste---------*/
 [data-anime]{
     opacity: 0;
-    transition: .4s;
+    transition: .8s;
 }
 [data-anime="left"]{
-    transform: translate3d(-65px, 0, 0);
+    transform: translate3d(-110px, 0, 0);
 }
 [data-anime="right"]{
-    transform: translate3d(65px, 0, 0);
+    transform: translate3d(110px, 0, 0);
 }
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
+}
+.testeimg{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

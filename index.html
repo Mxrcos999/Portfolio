@@ -9,7 +9,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="anima">
+    <div class="testeimg">
     <div class="header">
         <div><h3>Portfolio</h3></div>
         
@@ -19,21 +19,21 @@
             <li><a href="#ancoraContato">Contato</a></li>
         </div>
     </div>
-   
     <div class="apresentacao">
+        <img src="/img/Design_sem_nome__2_-removebg-preview.png" alt="">
         <div class="txt-apresent">
             <h2 id="hello">Hello, world!</h2>
             <h3>Marcos Felipe,<br>desenvolvedor fullStack</h3>
             <a href="#ancoraProjetos" class="btn">Conheça meus projetos</a>
         </div>
-        
-        <img src="img/kisspng-html-responsive-web-design-web-development-softwar-coder-transparent-png-5a756d8e097f52.3199091515176451980389.png" alt="">
     </div>
 </div>
     <div class="sobre">
         <div class="text-sobre" id="ancoraSobre" data-anime="right">
             <h1>Sobre mim</h1>
-            <p >Olá, mundo!<br>Meu nome é Marcos Felipe Celestino, sou um desenvolvedor Fullstack apaixonado por tecnologia! Entrei na área em 2019 e em 2020 comecei no mundo da programação, no momento estou cursando Desenvolvimento de sistemas e pretendo futuramente me formar em engenharia de software! Tenho experiencia com desenvolvimento web e conhecimento em algumas tecnologias para desenvolvimento de sistemas</p>
+            <p >Olá, mundo!<br>Meu nome é Marcos Felipe, tenho 18 anos, e sou um desenvolvedor Fullstack apaixonado por tecnologia! Entrei na área em 2019 e em 2020 comecei no mundo da programação, no momento estou trabalhando como desenvolvedor junior back-end, utilizando o ecossistema .NET. Estou cursando ciência da computação e sou formado como técnico em desenvolvimento de sistemas!</p>
+            <a href="/cv/Profile.pdf" download="Profile.pdf" type="application/pdf">Download CV</a>
+
         </div>
         <div>
             <img src="img/imgHe.png" data-anime="left" alt="">
@@ -43,7 +43,7 @@
         <h2 id="ancoraProjetos">Principais projetos</h2>
         <div class="menuProjetos">
             <button id="btnProjeto" onclick="mudaCardWeb()">Desenvolvimento Web</button>
-            <button id="btnProjeto"onclick="mudacard()">Desenvolvimento Java</button>
+            <button id="btnProjeto"onclick="mudacard()">Desenvolvimento C#</button>
         </div>
         <div class="web" id='web'>
 
@@ -81,26 +81,26 @@
   <div class="java " id="java">
 
     <div class="card">
-        <img id="img" src="img/bancos.png" alt="">
+        <img id="img" src="img/safepoint.png" alt="">
        
-            <h3 id="titulo">Cadastro de dados Bancarios</h3>
-            <p id="p">Sistema de cadastro de pessoas fisicas em juridicas. Tecnologias utilizadas: Java, SQL</p>
-            <a href="https://github.com/Mxrcos999/CrudsJava/tree/main/Bancos" target="_blank">Visitar</a>
+            <h3 id="titulo">Safe point</h3>
+            <p id="p">Projeto desenvolvido para ajudar mulheres e a comunidade LGBT a denunciarem locais de perigo. Desenvolvido com C#, Asp net, EF core e Identity</p>
+            <a href="https://www.linkedin.com/posts/marcos-felipe-2528a5158_softwareengineering-csharp-carreira-activity-6945693994743947264-tIko?utm_source=share&utm_medium=member_desktop" target="_blank">Visitar</a>
     </div>
 
    <div class="card">
-        <img id="img" src="img/meetap.png" alt="">
+        <img id="img" src="img/dashBord.png" alt="">
         
-        <h3 id="titulo">Cadastro de eventos</h3>
-        <p id="p">Sistema de cadastro de eventos feito para web. Tecnologias utilizadas, XHTML, CSS3, Java, JSF (primeFaces) e SQL</p>
+        <h3 id="titulo">Dashboard</h3>
+        <p id="p">Sistema de login para acessar um dashboard, desenvolvido com C#, windows forms e o banco de dados MySql</p>
         <a href="https://github.com/Mxrcos999/CrudsJava/tree/main/meetapp" target="_blank">Visitar</a>
     </div>
 
    <div class="card">
-         <img id="img" src="img/pontodeacesso.jpeg" alt="">
+         <img id="img" src="img/loja.png" alt="">
        
-          <h3 id="titulo">Controle de ponto de acesso</h3>
-          <p id="p"> Sistema de controle de ponto de acesso, Desenvolvido com Java, SpringBoot e JPA</p>
+          <h3 id="titulo">Sistema de vendas</h3>
+          <p id="p"> Sistema de vendas, desenvolvido com C#, Windows forms que consome uma API desenvolvida com Asp net, banco MySql</p>
            <a href="https://github.com/Mxrcos999/CrudsJava/tree/main/live" target="_blank">Visitar</a>
    </div>
 
@@ -112,25 +112,21 @@
     <h2 >Entre em contato</h2>
 </div>
   <div class="contato" id="ancoraContato">
-    
-      <img src="img/contato.png" alt="">
-      <form action="processa.php" method="POST" name="formContato">
-        
-        <label for="">Nome</label>
-        <input type="text" name="nome" id="nome" class="inputs" placeholder="Digite seu nome:">
-        <label for="">Email</label>
-        <input type="email" name="email" class="inputs" required placeholder="Digite seu Email:">
-        <label for="">Mensagem</label>
-        <textarea name="mensagem" id="" cols="30" rows="10" id="mensagem" placeholder="Digite sua mensagem:"></textarea>
-        <input onclick="validaForm()" class="envia" type="submit">
-      </form>
-    
+    <div class="itemContato">
+            <img src="img/whatsapp.png" alt="">
+            <h3>Whatsapp</h3>
+            <p>(16)98875-6900</p>
+        </div>
+        <div class="itemContato">
+            <img src="img/gmail.png" alt="">
+            <h3>Email</h3>
+            <p>Marcosfelipehd3@gmail.com</p>
+        </div>
+
   </div>
   <footer>
-      <div class="rodape">
-          <p>Desenvolvido por Marcos Felipe Celestino</p>
-          <p>Email: Marcosfelipehd3@gmail.com</p>
-      </div>
+    <p>Desenvolvido por Marcos Felipe Celestino</p>
+    <p>Email: Marcosfelipehd3@gmail.com</p>
       <div class="icons">
         <a href="https://github.com/Mxrcos999" target="_blank"> <i class="fab fa-github"></i></a> 
         <a href="https://www.linkedin.com/in/marcos-felipe-2528a5158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
