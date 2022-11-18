@@ -1,0 +1,31 @@
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#cardModelo img{
+    max-width: 300px;
+    width: 100%;
+
+}
+#cardModelo{
+    display: flex;
+    border: 1px solid rgba(108, 67, 67, 0.5);
+    align-items: center;
+    max-width: 400px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: left;
+    margin-bottom: 50px;
+    border-radius: 20px 10px 10px 10px;
+    box-shadow:4px 4px 4px 4px  rgba(108, 67, 67, 0.329);
+}
+.cardsProjetos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
