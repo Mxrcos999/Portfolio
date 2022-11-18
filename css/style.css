@@ -79,11 +79,12 @@ body{
 }
 .btn{
     text-decoration: none;
+    background-color: #0F62FE;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 30em;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-top: 20px;
     padding: 4px;
     display: flex;
     max-width: 280px;
@@ -91,9 +92,8 @@ body{
     text-align: center;
 }
 .btn:hover{
-    background-color: #0F62FE;
+    background-color: #1155d3;
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
     transition: 0.6s;
 }
 /*fim da apresentação e header*/
@@ -129,7 +129,8 @@ body{
     justify-content: center;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 254, 254);
-    border-radius: 30em;
+    border-radius: 10px;
+    margin-top: 20px;
     font-size: 20px;
     text-decoration: none;
    
@@ -170,7 +171,7 @@ body{
 .menuProjetos button{
     border-style: none;
     border: 1px solid rgb(255, 255, 255);
-    border-radius: 30em;
+    border-radius: 10px;
     width: 100%;
     font-size: 15px;
     max-width: 170px;
@@ -188,32 +189,60 @@ body{
 .menuProjetos a:hover{
     border-bottom: 1px solid whitesmoke;
 }
-.web{
-    display: flex;  
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto;
-    
-    
-}
+
 /*-----------crd projeto-----------*/
 .card{
-    display: flex;
-    box-shadow:  2px 2px rgba(55, 0, 255, 0.527) ;
+    overflow: hidden;
+    /* display: flex; */
+    /* box-shadow: 2px 2px rgb(55 0 255 / 53%); */
     flex-direction: column;
     width: 100%;
     max-width: 270px;
     height: 360px;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 10px;
+    /* border: 1px solid black; */
+    /* border-radius: 30px; */
+    /* padding: 10px; */
     margin-bottom: 20px;
     margin-top: 30px;
-    padding-bottom: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* padding-bottom: 10px; */
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 199px;
+    transition: 0.3s;
+    color: black;
+}
+
+.card h3{
+    border-bottom: solid 5px #7474ff;
+    width: 175px;
+    font-size: 17px;
+}
+
+
+.card:hover{
+    height: 340px;
+}
+
+.card_img{
+    max-width: 270px;
+    width: 100%;
+    height: 150px;
+    /* border-radius: 15px; */
+    color: var(--color_text);
+    margin-bottom: 15px;
+    border-top: solid 5px #7474ff;
+    border-width: 5px;
+    border-image: var(#7474ff);
+    border-image-slice: 1;
+}
+
+.web{
+    display: flex;  
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /*js cards*/
@@ -247,27 +276,19 @@ body{
     
 }
 /*js cards fim*/
-.card img{
-    max-width: 270px;
-    width: 100%;
-    height: 150px;
-    border-radius: 15px;
-}
+
 .card a{
     
     width: 120px;
     line-height: 30px;
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 20px;
+    color: white;
+    background-color: #0F62FE;
+    border-radius: 10px;
     padding: 3px;
 }
 .card a:hover{
-    background: linear-gradient(-45deg, #e2ab9a, #e296b3, #7fddff, #86d1c0) no-repeat;
-    background-size: 300% 300% ;
-    animation: back 3s ease infinite;
-    color: white;
+    background-color: #1155d3;
     transition: 0.6s;
 }
 /*------------contato*/
@@ -327,7 +348,7 @@ form textarea{
 }
 /*-------------footer-------------*/
 footer{
-    background-image:url("img/wave.png") ;
+    background-image:url("img/wave.svg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
