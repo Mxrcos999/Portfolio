@@ -327,7 +327,7 @@ form textarea{
 }
 /*-------------footer-------------*/
 footer{
-    background-image:url(/img/wave.svg) ;
+    background-image:url(img/wave.svg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
